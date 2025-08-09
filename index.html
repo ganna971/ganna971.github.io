@@ -2,93 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My ML Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganna Sherif - Portfolio</title>
   <style>
-    pre {
-      background: #f4f4f4;
-      padding: 1rem;
-      border-radius: 1rem;
-      overflow-x: auto;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #222;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+     header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      margin-bottom: 5px;
+    }
+    header p {
+      color: #555;
+      margin-top: 0;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    .project {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #0073e6;
+    }
+    .project p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .project a {
+      color: #0073e6;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+.project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
     }
   </style>
-<link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Ganna's Machine Learning Portfolio 💖</h1>
-    <p>ML Engineer • Data Analyst • Cuteness Enthusiast 🌸</p>
-  </header>
 
-  <section class="projects">
-    <h2>My Projects</h2>
+    <header>
+  <h1>Ganna Sherif</h1>
+  <p>Machine Learning & Data Science Engineer</p>
+</header>
 
-    <div class="project-card">
-      <h3>Disease Prediction App 🧬</h3>
-      <p>A Streamlit app to detect Chronic Kidney Disease using XGBoost and patient input.</p>
-      <h4>Code Sample:</h4>
-      <pre><code>import streamlit as st
-import xgboost as xgb
-import pandas as pd
+<section>
+  <h2>Projects</h2>
 
-st.title("Disease Predictor")
-age = st.number_input("Age")
-creatinine = st.number_input("Serum Creatinine")
-model = xgb.Booster()
-model.load_model("model.json")
-result = model.predict(...)
-st.write("Prediction:", result)</code></pre>
-      <h4>Results:</h4>
-      <ul>
-        <li>Accuracy: 92%</li>
-        <li>Real-time prediction</li>
-      </ul>
-      
-    </div>
+  <div class="project">
+    <h3>Disease Prediction App</h3>
+    <p>A Streamlit app using XGBoost to predict disease outcomes based on patient data.</p>
+    <a href="https://colab.research.google.com/drive/1ae9l8jfuPwvP17N4OUJi9I93unpb_rUt?usp=sharing" target="_blank" rel="noopener">Project Files</a>
+    
+  </div>
 
-    <div class="project-card">
-      <h3>Egypt Housing Prices 🏠</h3>
-      <p>A regression-based ML notebook that predicts housing prices in Egypt using features like area and location.</p>
-      <h4>Code Sample:</h4>
-      <pre><code>import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+  <div class="project">
+    <h3>Egypt Housing Prices</h3>
+    <p>Machine Learning regression analysis to predict housing prices in Egypt.</p>
+    <a href="https://colab.research.google.com/drive/1juF8J9Mt39HGmbleenEXeGPTEjK4VG_g?usp=sharing" target="_blank" rel="noopener">Project Files</a>
+  
+  </div>
 
-# Load data
-df = pd.read_csv("egypt_houses.csv")
+  <!-- Add more projects here following the same structure -->
 
-# Features and target
-X = df[["area", "location_score"]]
-y = df["price"]
+</section>
 
-# Train/test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-# Model training
-model = LinearRegression()
-model.fit(X_train, y_train)
-
-# Evaluation
-predictions = model.predict(X_test)
-mse = mean_squared_error(y_test, predictions)
-print("MSE:", mse)</code></pre>
-      <h4>Results:</h4>
-      <ul>
-        <li>R² Score: ~0.87</li>
-        <li>Used features: Area + Location Score</li>
-        <li>Evaluated using Mean Squared Error</li>
-      </ul>
-      
-    </div>
-
-  </section>
-
-  <footer>
-    <p>Made with 💕 by Ganna</p>
-  </footer>
-<script type="text/javascript" src="js/script.js"></script>
+<footer>
+  <p>Connect with me on 
+    <a href="www.linkedin.com/in/gannasherif" target="_blank" rel="noopener">LinkedIn</a> | 
+    <a href="mailto:gannasherif90@.com">Email</a>
+  </p>
+</footer>
 </body>
 </html>
-
