@@ -1,91 +1,72 @@
-/* Base styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fafafa;
-  color: #222;
-  line-height: 1.5;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-  background-color: #1a1a2e;
-  color: #eaeaea;
-  padding: 2rem 1rem;
-  text-align: center;
-}
+  <header>
+    <h1>My Projects</h1>
+    <p>Showcasing my Data Science & Web Development work</p>
+  </header>
 
-header h1 {
-  margin: 0;
-  font-size: 2.6rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-header p {
-  margin-top: 0.3rem;
-  font-size: 1.15rem;
-  font-weight: 400;
-  color: #bbb;
-}
+  <main>
+    <h2>Projects</h2>
 
-main {
-  max-width: 900px;
-  margin: 3rem auto 5rem auto;
-  padding: 0 1rem;
-}
+    <div class="projects-grid">
 
-h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.1rem;
-  color: #1a1a2e;
-  margin-bottom: 2rem;
-  letter-spacing: 0.5px;
-}
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.8rem;
-}
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3 class="project-title">Titanic Survival Prediction</h3>
+        <p class="project-desc">
+          Machine learning project predicting Titanic passenger survival using data cleaning, EDA, and classification models.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/titanic-ml" target="_blank">GitHub</a>
+          <a href="https://colab.research.google.com/..." target="_blank">Colab</a>
+        </div>
+      </div>
 
-.project-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3 class="project-title">RFM Customer Segmentation</h3>
+        <p class="project-desc">
+          Segmented customers based on Recency, Frequency, and Monetary metrics using the UCI Online Retail dataset.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/rfm-analysis" target="_blank">GitHub</a>
+          <a href="https://colab.research.google.com/..." target="_blank">Colab</a>
+        </div>
+      </div>
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-.project-title {
-  margin: 0 0 0.6rem 0;
-  color: #16213e;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3 class="project-title">Sales Dashboard</h3>
+        <p class="project-desc">
+          Interactive dashboard built in Python with Matplotlib & Seaborn for sales trend visualization and insights.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/sales-dashboard" target="_blank">GitHub</a>
+        </div>
+      </div>
 
-.project-desc {
-  color: #444;
-  font-size: 1rem;
-  margin-bottom: 1.1rem;
-  flex-grow: 1;
-}
+      <!-- Project 4 -->
+      <div class="project-card">
+        <h3 class="project-title">Web Portfolio</h3>
+        <p class="project-desc">
+          Personal portfolio website showcasing my projects, styled with HTML, CSS, and responsive design principles.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub</a>
+          <a href="https://yourportfolio.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
 
-.project-links a {
-  color: #0f3460;
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 1.2rem;
-  transition: color 0.2s ease;
-}
-.project-links a:hover {
-  color: #53354a;
-  text-decoration: underline;
-}
+    </div>
+  </main>
 
-
+</body>
+</html>
