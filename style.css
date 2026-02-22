@@ -64,9 +64,21 @@
           <a href="https://yourportfolio.com" target="_blank">Live Demo</a>
         </div>
       </div>
+<!-- Project 5 -->
+      <div class="project-card">
+        <h3 class="project-title">Fruit Freshness Detection: A Deep Learning Approach with InceptionV3</h3>
+        <p class="project-desc">
+          End-to-end Deep Learning application using InceptionV3 and Streamlit to perform real-time fruit freshness classification and automated quality analytics
+        </p>
+        <div class="project-links">
+          <a href="https://drive.google.com/drive/folders/1RZ16aPoCd-7a6n1PXKM4-GlwNixtFn-_?usp=drive_link">GitHub</a>
+          
+        </div>
+      </div>
 
     </div>
   </main>
 
 </body>
 </html>
+
